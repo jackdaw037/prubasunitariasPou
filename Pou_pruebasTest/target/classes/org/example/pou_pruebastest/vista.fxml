@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.pou_pruebastest.Controlador"
+      style="-fx-padding: 20; -fx-background-color: #f4f4f4;">
+
+    <!-- Nombre -->
+    <Label fx:id="lblNombre" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <!-- Dinero -->
+    <Label fx:id="lblDinero"/>
+
+    <Separator/>
+
+    <!-- Hambre -->
+    <Label text="Hambre"/>
+    <ProgressBar fx:id="barraHambre" style="-fx-accent: #ff6b6b;"/>
+
+    <!-- Felicidad -->
+    <Label text="Felicidad"/>
+    <ProgressBar fx:id="barraFelicidad" style="-fx-accent: #51cf66;"/>
+
+    <!-- Energía -->
+    <Label text="Energía"/>
+    <ProgressBar fx:id="barraEnergia" style="-fx-accent: #339af0;"/>
+
+    <Separator/>
+
+    <!-- Inventario -->
+    <Label text="Inventario" style="-fx-font-weight: bold;"/>
+    <Label fx:id="lblInventario"/>
+
+    <Separator/>
+
+    <!-- Botones -->
+    <Button fx:id="btnComer" text="🍔 Comer" maxWidth="200"/>
+    <Button fx:id="btnDormir" text="😴 Dormir" maxWidth="200"/>
+    <Button fx:id="btnJugar" text="🎮 Jugar" maxWidth="200"/>
+    <Button fx:id="btnTienda" text="🛒 Tienda" maxWidth="200"/>
+
+</VBox>
